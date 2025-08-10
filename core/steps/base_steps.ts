@@ -28,7 +28,7 @@ export class BaseSteps {
 
     async verifyNavigation(page: Page, buttonSelector: string, expectedUrl: RegExp, expectedElement: string, expectedText: string) {
         await page.click(buttonSelector);
-        await page.waitForLoadState('networkidle');
+        //await page.waitForLoadState('networkidle');
         await expect(page).toHaveURL(expectedUrl);
         await this.verifyElementHasText(page, expectedElement, expectedText)
     }
