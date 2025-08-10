@@ -7,7 +7,6 @@ Make sure you have the following installed:
 
 - Node.js
 - npm
-- Git (optional, for version control)
 
 ---
 ## Setup
