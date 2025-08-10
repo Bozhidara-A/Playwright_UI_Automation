@@ -1,4 +1,4 @@
-# Playwright Testing Project
+# Playwright Automation Testing Project
 This project uses Playwright with TypeScript to perform UI testing on Chromium. 
 
 ---
@@ -7,7 +7,6 @@ Make sure you have the following installed:
 
 - Node.js
 - npm
-- Git (optional, for version control)
 
 ---
 ## Setup
@@ -32,15 +31,8 @@ npx playwright test
 npx playwright test -g "<test_name>"
 ```
 
-3. To run a Playwright test in headed mode (with the browser visible), use the --headed flag:
+3. Run tests in headed mode (with the browser visible):
 
 ```bash
 npx playwright test --headed
-```
-
-4. To run Playwright tests on a specific browser, use the --project flag. 
-For example run on Chrome:
-
-```bash
-npx playwright test --project=chromium --headed
 ```
