@@ -12,7 +12,6 @@ export class BaseSteps {
     }
 
     async verifyElementHasText(page: Page, selector: string, text: string, caseSensitive: boolean = false) {
-        //this.waitForElementVisible(page, selector);
         const locator = page.locator(selector);
 
         if (caseSensitive) {

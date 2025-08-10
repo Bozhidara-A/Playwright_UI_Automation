@@ -65,7 +65,7 @@ test.describe('Navigation via header buttons', () => {
         await steps.verifySubmenuNavigation(page, BaseLocators.NEWSROOM_BUTTON, EVENTS_BUTTON, /.*\/events/, BaseLocators.PAGE_TITLE, "Events");
     });
 
-    test('Navigation to Carrers page from Header section', async ({ page, steps }) => {
+    test('Navigation to Careers page from Header section', async ({ page, steps }) => {
         await steps.verifyNavigation(page, BaseLocators.CAREERS_BUTTON, /.*\/careers/, BaseLocators.HEADING_TITLE, "Careers");
     });
 
@@ -75,13 +75,13 @@ test.describe('Navigation via header buttons', () => {
 
 });
 
-test.describe('Page content', () => {
+test.describe('Pages content verification', () => {
     test.beforeEach(async ({ page, steps }) => {
         await page.goto('https://www.leadconsult.eu/', { waitUntil: 'networkidle' });
         await steps.verifyElementVisible(BaseLocators.HEADER_SECTION);
     });
 
-    test('About us page content', async ({ page, steps }) => {
+    test('About Us page content verification', async ({ page, steps }) => {
         await page.hover(BaseLocators.ABOUT_US_BUTTON);
         await steps.waitForElementVisible(page, BaseLocators.HEADER_SUBMENU);
         await page.click(BaseLocators.OUR_COMPANY_BUTTON);
@@ -90,7 +90,7 @@ test.describe('Page content', () => {
         expect(visibleText).toMatch(/team|consulting/i);
     });
 
-    test('Contact us page content', async ({ page, steps }) => {
+    test('Contact Us page content verification', async ({ page, steps }) => {
         await page.click(BaseLocators.CONTACT_US_BUTTON);
         await page.waitForLoadState('networkidle');
 
@@ -102,7 +102,7 @@ test.describe('Page content', () => {
     });
 });
 
-test('Contact Form Submission Without reCAPTCHA Verification', async ({ page, steps }) => {
+test('Contact Form submission without reCAPTCHA Verification', async ({ page, steps }) => {
     await page.goto('https://www.leadconsult.eu/contact-us/', { waitUntil: 'networkidle' });
     await steps.verifyElementVisible(BaseLocators.HEADER_SECTION);
 
