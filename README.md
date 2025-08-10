@@ -37,10 +37,3 @@ npx playwright test -g "<test_name>"
 ```bash
 npx playwright test --headed
 ```
-
-4. To run Playwright tests on a specific browser, use the --project flag. 
-For example run on Chrome:
-
-```bash
-npx playwright test --project=chromium --headed
-```
