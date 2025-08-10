@@ -31,7 +31,7 @@ npx playwright test
 npx playwright test -g "<test_name>"
 ```
 
-3. To run a Playwright test in headed mode (with the browser visible), use the --headed flag:
+3. Run tests in headed mode (with the browser visible):
 
 ```bash
 npx playwright test --headed
