@@ -1,4 +1,4 @@
-# Playwright Testing Project
+# Playwright Automation Testing Project
 This project uses Playwright with TypeScript to perform UI testing on Chromium. 
 
 ---
